@@ -55,7 +55,7 @@ const Filter = ({ Data, filter, displayAlert }) => {
     const handleSearch = () => {
         let valid = true;
         if (location !== '') {
-            if (Array.from(new Set(data.map(location1 => location1.state + "," + location1.country))).filter((location1) => location1.includes(location)).length === 0) {
+            if (Array.from(new Set(Data.map(location1 => location1.state + "," + location1.country))).filter((location1) => location1.includes(location)).length === 0) {
                 valid = false;
                 setLocation("");
                 displayAlert("Location")
@@ -63,7 +63,7 @@ const Filter = ({ Data, filter, displayAlert }) => {
             }
         }
         if (type !== '') {
-            if (Array.from(new Set(data.map(type1 => type1.type))).filter((type1) => type1.includes(type)).length === 0) {
+            if (Array.from(new Set(Data.map(type1 => type1.type))).filter((type1) => type1.includes(type)).length === 0) {
                 valid = false;
                 setType("");
                 displayAlert("Type")

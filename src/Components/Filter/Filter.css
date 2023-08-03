@@ -1,0 +1,118 @@
+
+.Filter-Container{
+    width:100%;
+    margin-bottom: 50px;
+}
+
+.Main .Filter-Container{
+    background-color: white;
+    border-radius:8px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.Filter-Stack{
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.Filter-Stack::-webkit-scrollbar {
+    display: none;
+  }
+
+.filter-location,
+.filter-date,
+.filter-price,
+.filter-type {
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.filter-location label,
+.filter-date label,
+.filter-price label,
+.filter-type label{
+    color: rgb(0 0 0 / 0.5);
+    font-size: small;
+}
+
+.filter-input-text{
+    width:100%;
+    border:none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.filter-input-text:focus{
+    border:none;
+    border-bottom: 1px solid #531ba8;
+    outline: none;
+}
+
+
+
+.filter-date .rs-picker .rs-picker-toggle-value{
+    font-size: 18px;
+    color:black;
+    display: initial;
+}
+
+.filter-date .rs-picker-toggle .rs-picker-toggle-placeholder{
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.filter-date .rs-picker-date,
+.filter-date .rs-picker-toggle,
+.filter-date .rs-picker-default
+{
+    border: none !important;
+    box-shadow: none !important;
+    padding-left:0px;
+}
+
+.filter-date .rs-picker-default .rs-picker-toggle.rs-btn-md {
+    padding-top: 0px;
+    padding-left:0px;
+}
+
+.rs-picker .rs-picker-default .rs-picker-toggle.rs-btn-md{
+    padding-left:0px ;
+}
+
+.filter-date .rs-picker-date input{
+    border: none !important;
+    padding-left: 0px;
+}
+
+.Filter-DropDown{
+    max-height: 180px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.Filter-DropDown::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width:800px) {
+    .Filter-Stack.rs-stack{
+        flex-direction:column;
+    }
+    .Filter-Container{
+        width: fit-content;
+        margin:0px auto;
+        margin-bottom:50px;
+    }
+    .rs-divider{
+        background-color:white;
+    }
+}

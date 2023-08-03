@@ -1,0 +1,63 @@
+.CardList-Container{
+    width:100%;
+    margin-bottom: 50px;
+}
+
+.CardList-Content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.Panel-Container{
+    display: flex;
+    flex-direction:column;
+    padding:10px;
+    background-color: white;
+}
+
+.Panel-Container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Panel-Container-1 .Panel-Price-Col{
+    color:#531ba8;
+    font-size:19px;
+    font-weight: 700;
+}
+.Panel-Container-1 .Panel-Price-Col span{
+    color:gray;
+    font-size: 13px;
+    font-weight: 500;
+}
+.Panel-Container-1 .Panel-Name-Col{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.Panel-Container .Panel-Address-Col{
+    font-size: 12px;
+    color:gray;
+}
+.Panel-Container hr{
+    margin: 0.3rem 0;
+}
+.Panel-Container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.Panel-Container-2 div {
+    font-size: small;
+    color:gray;
+}
+.Panel-Container-2 div svg{
+    color:rgb(83 27 168/0.6);
+}
+.Panel-Fav-Col{
+    font-size:22px;
+    color:rgb(83 27 168/0.8);
+}
